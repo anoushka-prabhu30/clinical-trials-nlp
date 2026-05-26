@@ -1,0 +1,159 @@
+May-26 02:24:03.141 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+May-26 02:24:03.216 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.2
+May-26 02:24:03.281 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/anoush/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.4,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.2,nf-k8s@1.5.3,nf-seqera@0.20.0,nf-tower@1.27.0,nf-wave@1.20.0
+May-26 02:24:03.339 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-26 02:24:03.341 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-26 02:24:03.344 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+May-26 02:24:03.365 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+May-26 02:24:03.590 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+May-26 02:24:03.618 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-26 02:24:03.655 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/c/Users/anous/clinical-trials-nlp/nextflow.config
+May-26 02:24:03.659 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/c/Users/anous/clinical-trials-nlp/nextflow.config
+May-26 02:24:03.664 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+May-26 02:24:03.677 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-26 02:24:03.993 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-26 02:24:03.993 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-26 02:24:04.016 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/anoush/.nextflow/secrets/store.json
+May-26 02:24:04.020 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@54d8c20d] - activable => nextflow.secret.LocalSecretsProvider@54d8c20d
+May-26 02:24:04.043 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [sharp_feynman] - revision: abec4f37b2
+May-26 02:24:04.071 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'docker.autoMount'
+May-26 02:24:04.132 [main] DEBUG nextflow.Session - Session UUID: ca1c279c-9975-4532-ae21-6bd5663f6360
+May-26 02:24:04.133 [main] DEBUG nextflow.Session - Run name: sharp_feynman
+May-26 02:24:04.134 [main] DEBUG nextflow.Session - Executor pool size: 8
+May-26 02:24:04.147 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-26 02:24:04.155 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-26 02:24:04.194 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.2 build 12216
+  Created: 21-05-2026 21:22 UTC (17:22 EDT)
+  System: Linux 6.6.114.1-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 25.0.3-ea+7-Ubuntu-2
+  Encoding: UTF-8 (UTF-8)
+  Process: 2826@AnoushLaptop [127.0.1.1]
+  CPUs: 8 - Mem: 7.5 GB (6.1 GB) - Swap: 2 GB (2 GB)
+May-26 02:24:04.250 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/Users/anous/clinical-trials-nlp/work [v9fs]
+May-26 02:24:04.336 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-26 02:24:04.352 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+May-26 02:24:04.354 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+May-26 02:24:04.388 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-26 02:24:04.401 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+May-26 02:24:04.541 [main] DEBUG nextflow.Session - Session start
+May-26 02:24:04.547 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+May-26 02:24:04.935 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-26 02:24:05.054 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-26 02:24:05.055 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-26 02:24:05.063 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-26 02:24:05.073 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=7.5 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+May-26 02:24:05.076 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-26 02:24:05.127 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'DOWNLOAD': maxForks=0; fair=false; array=0
+May-26 02:24:05.182 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-26 02:24:05.183 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-26 02:24:05.185 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PREPROCESS': maxForks=0; fair=false; array=0
+May-26 02:24:05.208 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-26 02:24:05.209 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-26 02:24:05.210 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'EMBED': maxForks=0; fair=false; array=0
+May-26 02:24:05.217 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-26 02:24:05.222 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-26 02:24:05.223 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'CLUSTER': maxForks=0; fair=false; array=0
+May-26 02:24:05.227 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-26 02:24:05.227 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-26 02:24:05.228 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VISUALIZE': maxForks=0; fair=false; array=0
+May-26 02:24:05.231 [main] DEBUG nextflow.Session - Process names: PREPROCESS, DOWNLOAD, EMBED, CLUSTER, VISUALIZE
+May-26 02:24:05.235 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+May-26 02:24:05.236 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DOWNLOAD
+May-26 02:24:05.239 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PREPROCESS
+May-26 02:24:05.241 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EMBED
+May-26 02:24:05.243 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CLUSTER
+May-26 02:24:05.245 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VISUALIZE
+May-26 02:24:05.250 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /mnt/c/Users/anous/clinical-trials-nlp/main.nf
+May-26 02:24:05.250 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-26 02:24:05.250 [main] DEBUG nextflow.Session - Session await
+May-26 02:24:05.378 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-26 02:24:05.384 [Task submitter] INFO  nextflow.Session - [21/87ab9b] Submitted process > DOWNLOAD
+May-26 02:24:05.562 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: DOWNLOAD; status: COMPLETED; exit: 1; error: -; workDir: /mnt/c/Users/anous/clinical-trials-nlp/work/21/87ab9bdea3f2bcac37ecd43174a322]
+May-26 02:24:05.563 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+May-26 02:24:05.584 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=DOWNLOAD; work-dir=/mnt/c/Users/anous/clinical-trials-nlp/work/21/87ab9bdea3f2bcac37ecd43174a322
+  error [nextflow.exception.ProcessFailedException]: Process `DOWNLOAD` terminated with an error exit status (1)
+May-26 02:24:05.603 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'DOWNLOAD'
+
+Caused by:
+  Process `DOWNLOAD` terminated with an error exit status (1)
+
+
+Command executed:
+
+  pip install -q -r /mnt/c/Users/anous/clinical-trials-nlp/requirements.txt
+  mkdir -p data
+  cp /mnt/c/Users/anous/clinical-trials-nlp/data/studies.txt data/studies.txt
+  cp /mnt/c/Users/anous/clinical-trials-nlp/data/brief_summaries.txt data/brief_summaries.txt
+  python /mnt/c/Users/anous/clinical-trials-nlp/bin/download.py
+  cp data/trials_raw.csv .
+
+Command exit status:
+  1
+
+Command output:
+  
+  The command 'docker' could not be found in this WSL 2 distro.
+  We recommend to activate the WSL integration in Docker Desktop settings.
+  
+  For details about using Docker Desktop with WSL 2, visit:
+  
+  https://docs.docker.com/go/wsl2/
+
+Command error:
+  
+  The command 'docker' could not be found in this WSL 2 distro.
+  We recommend to activate the WSL integration in Docker Desktop settings.
+  
+  For details about using Docker Desktop with WSL 2, visit:
+  
+  https://docs.docker.com/go/wsl2/
+
+Work dir:
+  /mnt/c/Users/anous/clinical-trials-nlp/work/21/87ab9bdea3f2bcac37ecd43174a322
+
+Container:
+  python:3.11
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+May-26 02:24:05.611 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-26 02:24:05.612 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `DOWNLOAD` terminated with an error exit status (1)
+May-26 02:24:05.623 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+May-26 02:24:05.624 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-26 02:24:05.633 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=76ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+May-26 02:24:05.633 [TaskFinalizer-1] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=76ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+May-26 02:24:05.634 [TaskFinalizer-1] DEBUG nextflow.Session - null
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait0(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:389)
+	at java.base/java.lang.Thread.join(Thread.java:1887)
+	at java.base/java.lang.Thread.join(Thread.java:1963)
+	at nextflow.trace.AnsiLogObserver.onFlowComplete(AnsiLogObserver.groovy:559)
+	at nextflow.Session$_notifyFlowComplete_lambda38.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1123)
+	at nextflow.Session.notifyFlowComplete(Session.groovy:1093)
+	at nextflow.Session.shutdown0(Session.groovy:775)
+	at nextflow.Session.abort(Session.groovy:830)
+	at nextflow.Session.fault(Session.groovy:792)
+	at nextflow.processor.TaskPollingMonitor.finalizeTask(TaskPollingMonitor.groovy:753)
+	at nextflow.processor.TaskPollingMonitor.safeFinalizeTask(TaskPollingMonitor.groovy:736)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1341)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1096)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.processor.TaskPollingMonitor$_checkTaskStatus_lambda8.doCall(TaskPollingMonitor.groovy:726)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+May-26 02:24:05.852 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-26 02:24:05.894 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
