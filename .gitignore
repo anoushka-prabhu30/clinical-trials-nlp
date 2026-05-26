@@ -4,3 +4,4 @@ output/
 work/
 __pycache__/
 *.pyc
+.nextflow.log*
